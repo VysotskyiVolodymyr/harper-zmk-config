@@ -49,7 +49,7 @@
 &none       &kp INS     &kp PSCRN  &kp K_CMENU  &none        &none                            &kp PG_UP  &kp HOME   &kp UP     &kp END    &none              &none
 &none       &none       &none      &none        &none        &none                            &kp PG_DN  &kp LEFT   &kp DOWN   &kp RIGHT  &kp DEL            &kp BSPC
 &kp LSHIFT  &kp K_UNDO  &kp K_CUT  &kp K_COPY   &kp K_PASTE  &none                            &none      &none      &none      &none      &none              &none
-&none       &none       &kp LCTRL  &mo 3        &kp LCTRL    &kp RIGHT_ALT  &kp LEFT_COMMAND  &mo 1      &kp SPACE  &kp SPACE  &mo 2      &kp RIGHT_COMMAND  &kp RIGHT_ALT  &kp RCTRL
+&none       &kp RSHFT   &kp LCTRL  &mo 3        &kp LCTRL    &kp RIGHT_ALT  &kp LEFT_COMMAND  &mo 1      &kp SPACE  &kp SPACE  &mo 2      &kp RIGHT_COMMAND  &kp RIGHT_ALT  &kp RCTRL
                                                                                               &kp RGUI                                                                      &mo 3
             >;
 
@@ -62,7 +62,7 @@
 &rgb_ug RGB_TOG    &rgb_ug RGB_BRD                  &rgb_ug RGB_BRI                    &rgb_ug RGB_SPD                   &rgb_ug RGB_SPI                  &rgb_ug RGB_EFF                          &none     &none      &kp UP     &none      &none  &none
 &ext_power EP_TOG  &rgb_ug RGB_COLOR_HSB(0,100,50)  &rgb_ug RGB_COLOR_HSB(218,100,50)  &rgb_ug RGB_COLOR_HSB(120,97,50)  &rgb_ug RGB_COLOR_HSB(60,0,100)  &rgb_ug RGB_COLOR_HSB(64,100,52)         &none     &kp LEFT   &kp DOWN   &kp RIGHT  &none  &none
 &sys_reset         &bootloader                      &none                              &none                             &ind IND_ON                      &ind BAT_ST                              &none     &none      &none      &none      &none  &none
-&none              &none                            &kp LCTRL                          &kp LGUI                          &kp LALT                         &mo 3                             &mo 2  &mo 1     &kp SPACE  &kp SPACE  &mo 2      &mo 3  &mo 1  &kp RALT
+&none              &kp RSHFT                        &kp LCTRL                          &kp LGUI                          &kp LALT                         &mo 3                             &mo 2  &mo 1     &kp SPACE  &kp SPACE  &mo 2      &mo 3  &mo 1  &kp RALT
                                                                                                                                                                                                    &kp RGUI                                                 &kp RCTRL
             >;
 
@@ -71,12 +71,12 @@
 
         layer_4 {
             bindings = <
-&kp ESC    &none  &none  &none  &none      &none               &none     &none      &none      &none      &none      &kp BSPC
-&kp TAB    &none  &none  &none  &none      &none               &none     &none      &none      &none      &none      &kp BSPC
-&kp CAPS   &none  &none  &none  &none      &none               &trans    &kp LBKT   &kp RBKT   &kp MINUS  &kp EQUAL  &kp GRAVE
-&kp LSHFT  &none  &none  &none  &none      &none               &none     &none      &none      &none      &none      &none
-&none      &none  &none  &none  &kp LCTRL  &kp LALT  &kp LGUI  &kp LALT  &kp SPACE  &kp ENTER  &none      &kp LGUI   &kp LALT   &kp LCTRL
-                                                               &none                                                            &none
+&kp ESC    &none      &none  &none  &none      &none               &none     &none      &none      &none      &none      &kp BSPC
+&kp TAB    &none      &none  &none  &none      &none               &none     &none      &none      &none      &none      &kp BSPC
+&kp CAPS   &none      &none  &none  &none      &none               &trans    &kp LBKT   &kp RBKT   &kp MINUS  &kp EQUAL  &kp GRAVE
+&kp LSHFT  &none      &none  &none  &none      &none               &none     &none      &none      &none      &none      &none
+&none      &kp RSHFT  &none  &none  &kp LCTRL  &kp LALT  &kp LGUI  &kp LALT  &kp SPACE  &kp ENTER  &none      &kp LGUI   &kp LALT   &kp LCTRL
+                                                                   &none                                                            &none
             >;
         };
     };
