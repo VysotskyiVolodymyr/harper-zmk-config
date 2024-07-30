@@ -19,9 +19,9 @@
     behaviors {
         F
 
-        dance: F_dance {
+        dance: dance {
             compatible = "zmk,behavior-tap-dance";
-            label = "F DANCE";
+            label = "DANCE";
             #binding-cells = <0>;
             bindings = <&lt 4 F>, <&kp LG(LC(LA(LS(F))))>;
 
