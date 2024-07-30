@@ -28,14 +28,6 @@
             flavor = "tap-preferred";
             tapping-term-ms = <200>;
         };
-
-        F_dance: F_dance {
-            compatible = "zmk,behavior-tap-dance";
-            label = "F_DANCE";
-            #binding-cells = <0>;
-            tapping-term-ms = <300>;
-            bindings = <&lt 4 F>, <&custom_hold LS(LA(LG(LC(F)))) F>;
-        };
     };
 
     keymap {
